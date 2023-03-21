@@ -15,9 +15,6 @@ body {
 .App {
   background: #f8f8f8;
   width: 320px;
-
-  /* padding: 1rem;
-  margin-top: 1rem; */
   box-shadow: 0 9px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
