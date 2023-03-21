@@ -1,4 +1,4 @@
-/* body {
+body {
   margin: 0;
   font-family:
     -apple-system,
@@ -16,7 +16,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
+/* code {
   font-family:
     source-code-pro,
     Menlo,
