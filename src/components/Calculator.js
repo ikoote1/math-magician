@@ -1,7 +1,7 @@
 export default function Calculator() {
   return (
     <div className="calculate">
-      <div className="screen">0</div>
+      <div className="screen">00000001</div>
       <div className="btns">
         <button type="button" className="btn">AC</button>
         <button type="button" className="btn">+/-</button>
