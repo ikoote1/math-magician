@@ -3,7 +3,7 @@ import calculate from '../logic/calculate';
 
 export default function Calculator() {
   const [state, setState] = useState({
-    total: null,
+    total: 0,
     next: null,
     operation: null,
   });
