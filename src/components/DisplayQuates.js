@@ -29,13 +29,13 @@ function Display() {
     fetchData();
   }, [setData, setIsLoading]);
 
-  if (hasError) return <div>Something went wrong!</div>;
+  if (hasError) return <div className="load">Something went wrong!</div>;
 
-  if (isLoading) return <div>Loading...</div>;
+  if (isLoading) return <div className="load">Loading...</div>;
 
   return (
     <div className="quote">
-      <h1>Better quote</h1>
+      <h1>Best quote</h1>
       <p className="quotes">{quote}</p>
     </div>
   );
