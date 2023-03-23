@@ -1,5 +1,5 @@
-const Screen = () => (
-  <div className="screen">00000001</div>
-);
+// const Screen = () => (
+//   <div className="screen">{state.next || state.total}</div>
+// );
 
-export default Screen;
+// export default Screen;

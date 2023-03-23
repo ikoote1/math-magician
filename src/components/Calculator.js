@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import Screen from './Screen';
+import React, {useState} from 'react';
+// import Screen from './Screen';
+import Stat from './State';
 import calculate from '../logic/calculate';
 
 export default function Calculator() {
@@ -13,10 +14,10 @@ export default function Calculator() {
     const newState = calculate(state, buttonName);
     setState(newState);
   };
-
+ <Stat />
   return (
     <div className="calculate">
-      <Screen />
+      <div className="screen">{state.next || state.total}</div>
       <div className="btns">
         <button type="button" className="btn" onClick={() => preimClick('AC')}>AC</button>
         <button type="button" className="btn" onClick={() => preimClick('+/-')}>+/-</button>
