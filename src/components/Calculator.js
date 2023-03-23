@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 // import Screen from './Screen';
 import Stat from './State';
 import calculate from '../logic/calculate';
@@ -14,32 +14,32 @@ export default function Calculator() {
     const newState = calculate(state, buttonName);
     setState(newState);
   };
- <Stat />
-  return (
-    <div className="calculate">
-      <div className="screen">{state.next || state.total}</div>
-      <div className="btns">
-        <button type="button" className="btn" onClick={() => preimClick('AC')}>AC</button>
-        <button type="button" className="btn" onClick={() => preimClick('+/-')}>+/-</button>
-        <button type="button" className="btn" onClick={() => preimClick('%')}>%</button>
-        <button type="button" className="btn btn1" onClick={() => preimClick('/')}>/</button>
-        <button type="button" className="btn" onClick={() => preimClick('7')}>7</button>
-        <button type="button" className="btn" onClick={() => preimClick('8')}>8</button>
-        <button type="button" className="btn" onClick={() => preimClick('9')}>9</button>
-        <button type="button" className="btn btn1" onClick={() => preimClick('*')}>*</button>
-        <button type="button" className="btn" onClick={() => preimClick('4')}>4</button>
-        <button type="button" className="btn" onClick={() => preimClick('5')}>5</button>
-        <button type="button" className="btn" onClick={() => preimClick('6')}>6</button>
-        <button type="button" className="btn btn1" onClick={() => preimClick('-')}>-</button>
-        <button type="button" className="btn" onClick={() => preimClick('1')}>1</button>
-        <button type="button" className="btn" onClick={() => preimClick('2')}>2</button>
-        <button type="button" className="btn" onClick={() => preimClick('3')}>3</button>
-        <button type="button" className="btn btn1" onClick={() => preimClick('+')}>+</button>
-        <button type="button" className="btn zero" onClick={() => preimClick('0')}>0</button>
-        <button type="button" className="btn" onClick={() => preimClick('.')}>.</button>
-        <button type="button" className="btn btn1" onClick={() => preimClick('=')}>=</button>
-      </div>
+    <Stat />;
+    return (
+      <div className="calculate">
+        <div className="screen">{state.next || state.total}</div>
+        <div className="btns">
+          <button type="button" className="btn" onClick={() => preimClick('AC')}>AC</button>
+          <button type="button" className="btn" onClick={() => preimClick('+/-')}>+/-</button>
+          <button type="button" className="btn" onClick={() => preimClick('%')}>%</button>
+          <button type="button" className="btn btn1" onClick={() => preimClick('÷')}>÷</button>
+          <button type="button" className="btn" onClick={() => preimClick('7')}>7</button>
+          <button type="button" className="btn" onClick={() => preimClick('8')}>8</button>
+          <button type="button" className="btn" onClick={() => preimClick('9')}>9</button>
+          <button type="button" className="btn btn1" onClick={() => preimClick('x')}>*</button>
+          <button type="button" className="btn" onClick={() => preimClick('4')}>4</button>
+          <button type="button" className="btn" onClick={() => preimClick('5')}>5</button>
+          <button type="button" className="btn" onClick={() => preimClick('6')}>6</button>
+          <button type="button" className="btn btn1" onClick={() => preimClick('-')}>-</button>
+          <button type="button" className="btn" onClick={() => preimClick('1')}>1</button>
+          <button type="button" className="btn" onClick={() => preimClick('2')}>2</button>
+          <button type="button" className="btn" onClick={() => preimClick('3')}>3</button>
+          <button type="button" className="btn btn1" onClick={() => preimClick('+')}>+</button>
+          <button type="button" className="btn zero" onClick={() => preimClick('0')}>0</button>
+          <button type="button" className="btn" onClick={() => preimClick('.')}>.</button>
+          <button type="button" className="btn btn1" onClick={() => preimClick('=')}>=</button>
+        </div>
 
-    </div>
-  );
+      </div>
+    );
 }
