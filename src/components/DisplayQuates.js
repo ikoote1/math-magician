@@ -1,6 +1,6 @@
+import { useState, useEffect } from "react"
 
-
-function App() {
+function Display() {
   const [data, setData] = useState([])
   const [hasError, setHasError] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
@@ -33,4 +33,4 @@ function App() {
   )
 }
 
-export default App
+export default Display
