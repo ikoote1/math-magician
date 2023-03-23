@@ -26,18 +26,18 @@ export default function Calculator() {
         <button type="button" className="btn" onClick={()=>preimClick()}>7</button>
         <button type="button" className="btn" onClick={()=>preimClick()}>8</button>
         <button type="button" className="btn" onClick={()=>preimClick()}>9</button>
-        <button type="button" className="btn btn1">*</button>
-        <button type="button" className="btn">4</button>
-        <button type="button" className="btn">5</button>
-        <button type="button" className="btn">6</button>
-        <button type="button" className="btn btn1">-</button>
-        <button type="button" className="btn">1</button>
-        <button type="button" className="btn">2</button>
-        <button type="button" className="btn">3</button>
-        <button type="button" className="btn btn1">+</button>
-        <button type="button" className="btn zero">0</button>
-        <button type="button" className="btn">.</button>
-        <button type="button" className="btn btn1">=</button>
+        <button type="button" className="btn btn1" onClick={()=>preimClick()}>*</button>
+        <button type="button" className="btn" onClick={()=>preimClick()}>4</button>
+        <button type="button" className="btn" onClick={()=>preimClick()}>5</button>
+        <button type="button" className="btn" onClick={()=>preimClick()}>6</button>
+        <button type="button" className="btn btn1" onClick={()=>preimClick()}>-</button>
+        <button type="button" className="btn" onClick={()=>preimClick()}>1</button>
+        <button type="button" className="btn" onClick={()=>preimClick()}>2</button>
+        <button type="button" className="btn" onClick={()=>preimClick()}>3</button>
+        <button type="button" className="btn btn1" onClick={()=>preimClick()}>+</button>
+        <button type="button" className="btn zero" onClick={()=>preimClick()}>0</button>
+        <button type="button" className="btn" onClick={()=>preimClick()}>.</button>
+        <button type="button" className="btn btn1" onClick={()=>preimClick()}>=</button>
       </div>
 
     </div>
