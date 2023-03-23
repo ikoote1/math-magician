@@ -1,17 +1,31 @@
 import Screen from './Screen';
+import React, {useState} from 'react';
+import calculate from '../logic/calculate';
 
 export default function Calculator() {
+  const [state, setState] = useState({
+    total : null,
+    next : null,
+    operation: null
+  });
+
+  const preimClick = (buttonName) =>{
+    const newState = calculate(state, buttonName);
+    setState(newState);
+  }
+
+
   return (
     <div className="calculate">
       <Screen />
       <div className="btns">
-        <button type="button" className="btn">AC</button>
-        <button type="button" className="btn">+/-</button>
-        <button type="button" className="btn">%</button>
-        <button type="button" className="btn btn1">/</button>
-        <button type="button" className="btn">7</button>
-        <button type="button" className="btn">8</button>
-        <button type="button" className="btn">9</button>
+        <button type="button" className="btn" onClick={()=>preimClick()}>AC</button>
+        <button type="button" className="btn" onClick={()=>preimClick()}>+/-</button>
+        <button type="button" className="btn" onClick={()=>preimClick()}>%</button>
+        <button type="button" className="btn btn1" onClick={()=>preimClick()}>/</button>
+        <button type="button" className="btn" onClick={()=>preimClick()}>7</button>
+        <button type="button" className="btn" onClick={()=>preimClick()}>8</button>
+        <button type="button" className="btn" onClick={()=>preimClick()}>9</button>
         <button type="button" className="btn btn1">*</button>
         <button type="button" className="btn">4</button>
         <button type="button" className="btn">5</button>
