@@ -20,7 +20,12 @@ function Display() {
         });
         const data = await response.json();
         console.log(data);
-        setData(data[0].quote);
+        document.querySelector('.preim').addEventListener('click',()=>{
+          const n =1;
+          for(let i=0;i<=data;i+n){
+            setData(data[i].quote);
+          }
+        })
       } catch (error) {
         setHasError(true);
       }

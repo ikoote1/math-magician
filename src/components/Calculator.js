@@ -35,7 +35,7 @@ export default function Calculator() {
         <button type="button" className="btn btn1" onClick={() => preimClick('+')}>+</button>
         <button type="button" className="btn zero" onClick={() => preimClick('0')}>0</button>
         <button type="button" className="btn" onClick={() => preimClick('.')}>.</button>
-        <button type="button" className="btn btn1" onClick={() => preimClick('=')}>=</button>
+        <button type="button" className="btn btn1 preim" onClick={() => preimClick('=')}>=</button>
       </div>
 
     </div>
