@@ -20,12 +20,7 @@ function Display() {
         });
         const data = await response.json();
         console.log(data);
-        document.querySelector('.preim').addEventListener('click',()=>{
-          const n =1;
-          for(let i=0;i<=data;i+n){
-            setData(data[i].quote);
-          }
-        })
+        setData(data[0].quote);
       } catch (error) {
         setHasError(true);
       }
@@ -47,27 +42,3 @@ function Display() {
 }
 
 export default Display;
-
-//   .then(response => response.json())
-//   .then(data => console.log(data))
-//   .catch(error => console.error(error));
-
-// const apiKeyEndpoint = "https://api.api-ninjas.com/v1/quotes?category";
-
-// fetch(apiKeyEndpoint, {
-//   method: "POST",
-//   body: JSON.stringify({
-//     username: "your-username",
-//     password: "your-password"
-//   }),
-//   headers: {
-//     "Content-Type": "application/json"
-//   }
-// })
-//   .then(response => response.json())
-//   .then(data => {
-//     const apiKey = data.api_key;
-//     console.log(apiKey);
-//     // Use the API key to make requests to the API
-//   })
-//   .catch(error => console.error(error));
