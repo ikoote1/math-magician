@@ -12,7 +12,41 @@ body {
   justify-content: center;
 }
 
-.App {
+.App{
+  background: #f8f8f8;
+  width: 620px;
+  height: 620px;
+  box-shadow: 0 9px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.quote{
+  position: relative;
+  top: 7px;
+  background: #f8f8f8;
+  width: 620px;
+  height: 340px;
+  box-shadow: 0 9px 15px -3px rgba(0, 0, 0, 0.1);
+  overflow: scroll;
+}
+
+.quote::-webkit-scrollbar{
+  width: 0;
+}
+
+h1{
+  font-weight: 600;
+  text-align: center;
+}
+
+.quotes{
+position: relative;
+  left: 8px;
+}
+
+.calculate {
+  position: relative;
+  left: 150px;
+  top: 5px;
   background: #f8f8f8;
   width: 320px;
   box-shadow: 0 9px 15px -3px rgba(0, 0, 0, 0.1);
