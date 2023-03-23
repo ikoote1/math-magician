@@ -36,7 +36,7 @@ function Display() {
   return (
     <div className="quote">
       <h1>Best quote</h1>
-      <p className="quotes">{quote}</p>
+      <h4 className="quotes">{quote}</h4>
     </div>
   );
 }
