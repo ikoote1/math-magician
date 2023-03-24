@@ -14,6 +14,41 @@ body {
 
 .App {
   background: #f8f8f8;
+  width: 620px;
+  box-shadow: 0 9px 15px -3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+}
+
+.quote {
+  background: #f8f8f8;
+  width: 300px;
+}
+
+.load {
+  position: relative;
+  left: 70px;
+  top: 120px;
+}
+
+h1 {
+  position: relative;
+  top: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.quotes {
+  font-style: italic;
+  position: relative;
+  left: 20px;
+  top: 20px;
+  padding-right: 20px;
+  margin-right: 20px;
+}
+
+.calculate {
+  background: #f8f8f8;
   width: 320px;
   box-shadow: 0 9px 15px -3px rgba(0, 0, 0, 0.1);
 }
