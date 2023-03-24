@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 const category = 'knowledge';
 const apiUrl = `https://api.api-ninjas.com/v1/quotes?category=${category}`;
-const apiKey = '8d3AEu5Zw1oN3/7ZcRczQw==Pttifja0qKZnwTuq';
+const apiKey = 'fWRUpL/SRtWmSMFaoStknQ==spcRIlF3BA1NC8dT';
 
 function Display() {
   const [quote, setData] = useState([]);
